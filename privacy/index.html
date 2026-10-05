@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="note-market-autoが読み取るGmail情報の利用目的、保存、外部サービスの利用とアクセス取り消しについて。">
+  <title>プライバシーポリシー | note-market-auto</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="サイト内メニュー">
+      <a href="../index.html">ホーム</a>
+      <a href="index.html" aria-current="page">プライバシーポリシー</a>
+    </nav>
+  </header>
+  <main>
+    <h1>プライバシーポリシー</h1>
+    <p>対象アプリ：note-market-auto<br>更新日：2026年10月5日</p>
+    <h2>1. 利用目的</h2>
+    <p>note-market-autoは、運営者本人が日本株の市況記事を作成し、自分のnoteへ投稿するための個人利用ツールです。一般ユーザー向けのサービスではありません。</p>
+    <h2>2. Google権限と読み取る情報</h2>
+    <p>利用するGoogle権限はGmailの読み取り専用権限（gmail.readonly）です。スコープは <code>https://www.googleapis.com/auth/gmail.readonly</code> です。</p>
+    <p>この権限はGmailの読み取りを許可しますが、実際の処理では送信元・件名・対象日付で市況メールを検索し、株式市況記事の生成に必要な範囲の本文、メールIDなどを読み取ります。Gmailのメール送信・削除・変更は行いません。</p>
+    <h2>3. 情報の利用と外部サービス</h2>
+    <p>取得した市況メールの情報は、関連情報の調査、記事・サムネイルの生成、事実確認、重複処理の防止に利用します。取得情報を販売せず、第三者広告の目的にも使用しません。</p>
+    <p>記事生成処理ではCodex / OpenAIを利用し、市況メール本文や調査情報など、処理に必要な情報を渡します。サムネイル生成にもCodexの画像生成機能を利用します。</p>
+    <p>品質検証を通過した生成記事・画像は、運営者のnoteへ公開される場合があります。公開された記事・画像は第三者が閲覧できます。OpenAIとnoteでの情報の扱いには、各サービスの規約・プライバシーポリシーが適用されます。</p>
+    <h2>4. ローカルでの保存</h2>
+    <p>OAuthトークンはローカル環境で使用・保存します。取得したメール本文、調査結果、生成記事・画像、検証結果、投稿記録はプロジェクトの出力フォルダ等に保存し、重複防止用の状態データベースにはメールIDや本文のコピーを記録します。実行ログも保存します。</p>
+    <p>OAuthトークンや取得メール本文を、この説明サイトへ掲載することはありません。保存先がOneDriveなどの同期対象フォルダの場合は、その環境の同期設定に従って保存データが同期されることがあります。</p>
+    <h2>5. アクセスの取り消しとデータ削除</h2>
+    <p>ユーザーはGoogleアカウントのセキュリティ設定から、本ツールへのアクセスを取り消せます。</p>
+    <p>不要になったローカルデータやOAuthトークンは、ユーザーが削除できます。アクセスの取り消しだけでは、保存済みのローカルデータやnoteの公開記事は削除されません。公開記事の削除はnote上で別途行います。</p>
+    <h2>6. この説明ページ</h2>
+    <p>この説明ページには広告、独自のアクセス解析、外部トラッカーを設置しません。</p>
+    <h2>7. 連絡先</h2>
+    <p class="contact-placeholder">celine3915@gmail.com</p>
+  </main>
+  <footer><p>note-market-auto · 個人利用ツール</p></footer>
+</body>
+</html>
